@@ -47,7 +47,7 @@ class ProblemSchema(BaseModel):
     topic: List[str] = Field(..., description="List of DSA topics related to this problem.")
     difficulty: str = Field(..., description="Difficulty level of the problem (e.g., Easy, Medium, Hard).")
     solution_code: str = Field(..., description="Complete C++ solution code for the problem.")
-    note: str = Field(..., description="Detailed markdown note explaining the problem and its solution(eg. overview , Context & Importance , Key Concepts, Step-by-Step Solution).")
+    note: str = Field(..., description="Detailed markdown note explaining and focusing on the Design Pattern of this problem  and another approaches. what is most rememberable about similar question")
     interview_tips: List[str] = Field(..., description="List of interview tips related to this problem.")
     isChat : bool = False
 class AgentState(MessagesState):
